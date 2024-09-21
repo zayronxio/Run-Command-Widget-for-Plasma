@@ -23,6 +23,7 @@ KCM.SimpleKCM {
     property string cfg_command: command.text
     property string cfg_icon: Plasmoid.configuration.icon
     property string def_icon: "new-command-alarm"
+    property alias cfg_textBold: checkedBoldText.checked
 
     Kirigami.FormLayout {
         Button {
@@ -141,6 +142,11 @@ KCM.SimpleKCM {
                     }
                 }
             ]
+        }
+
+        CheckBox {
+            id: checkedBoldText
+            text: "Bold Text"
         }
 
         Label {

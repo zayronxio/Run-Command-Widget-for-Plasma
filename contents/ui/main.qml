@@ -32,6 +32,7 @@ PlasmoidItem {
 
     readonly property bool inVertical: Plasmoid.formFactor === PlasmaCore.Types.Vertical
     readonly property string defaultIconName: "new-command-alarm"
+    property bool textBold: plasmoid.configuration.textBold
 
     Plasmoid.icon: Plasmoid.configuration.icon
 
@@ -74,7 +75,7 @@ PlasmoidItem {
             visible: !(plasmoid.configuration.menuLabel === "") && !root.inVertical
 
             verticalAlignment: Text.AlignVCenter
-
+            font.bold: textBold
             text: plasmoid.configuration.menuLabel
         }
     }

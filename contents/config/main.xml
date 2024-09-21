@@ -18,5 +18,8 @@
       <label>Command to execute</label>
       <default>konsole</default>
     </entry>
+    <entry name="textBold" type="bool">
+      <default>false</default>
+    </entry>
   </group>
 </kcfg>
